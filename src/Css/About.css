@@ -1,0 +1,37 @@
+.About {
+  background-color: #152024;
+  min-height: 70vh;
+  padding: 80px 0;
+}
+.About .Text {
+  padding-left: 100px;
+}
+.About .Text h2 {
+  color: white;
+  margin-bottom: 20px;
+  font-family: "Cairo", sans-serif;
+}
+.About .Text h6 {
+  color: #3786da;
+  color: gray;
+  margin-bottom: 15px;
+}
+.About .Img {
+  overflow: hidden;
+  width: 450px;
+  height: 350px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.About .Img img {
+  width: 450px;
+  height: 350px;
+  transition: all 0.3s ease;
+}
+.About:hover img {
+  transform: scale(1.2);
+  border-radius: 20px;
+}/*# sourceMappingURL=About.css.map */

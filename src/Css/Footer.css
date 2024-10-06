@@ -1,0 +1,60 @@
+.footer {
+  min-height: 70vh;
+  position: relative;
+}
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%; /* Start the border from the center */
+  width: 70%;
+  border-top: 1px solid rgba(128, 128, 128, 0.475); /* Adjust thickness and color */
+  transform: translateX(-50%); /* Align the border with the center */
+}
+.footer .img {
+  display: flex;
+  height: 70px;
+  align-items: end;
+}
+.footer .img img {
+  width: 50px;
+}
+.footer .details {
+  height: 300px;
+}
+.footer .details h6 {
+  color: rgb(98, 98, 98);
+  width: 300px;
+  margin-bottom: 10px;
+}
+.footer .pages h5 {
+  font-family: "Cairo", sans-serif;
+}
+.footer .pages .page {
+  font-family: "Cairo", sans-serif;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 15px;
+  color: black;
+  text-decoration: none;
+  background: linear-gradient(to right, #ef6c00, #d2a179), linear-gradient(to right, #ff0000, #ff00b4, #0064c8);
+  background-size: 100% 1.3px, 0 1px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s ease;
+}
+.footer .pages .page:hover {
+  background-size: 0 2px, 100% 2px;
+  transform: scale(1.05);
+}
+.footer .medias {
+  height: 100px;
+}
+.footer .medias h5 {
+  color: #36515c;
+  margin-bottom: 25px;
+  font-family: "Cairo", sans-serif;
+}
+.footer .medias .media {
+  height: 100px;
+}/*# sourceMappingURL=Footer.css.map */

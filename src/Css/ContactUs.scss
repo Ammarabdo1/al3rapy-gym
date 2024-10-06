@@ -1,0 +1,60 @@
+.FormValidate {
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  .flex {
+    display: flex;
+  }
+  .form {
+    border-radius: 15px;
+  background-color: #ffffff1b;
+  box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.437);
+    padding: 20px;
+    backdrop-filter: blur(20px);
+    .mainStackInForm {
+      .card {
+        input {
+          display: none;
+        }
+
+        label {
+          display: flex;
+        }
+      }
+      .loader {
+        display: flex;
+        justify-content: center;
+      }
+      .habits {
+        .CheckedIcon {
+          transition: all 0.5s ease;
+          &:hover {
+            transition: all 0.5s ease;
+            border: 1px solid ;
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
+  }
+  .success {
+    display: flex;
+    color: green;
+
+  }
+}
+.text {
+    h6{
+        color:#5d5d5d;
+        color:#a7a7a7;
+        margin-bottom: 20px;font-family: "Cairo", sans-serif;
+    }
+
+    h3{
+        color:white;
+    }
+
+    h5{
+        color:#6F7884;font-family: "Cairo", sans-serif;
+    }
+}

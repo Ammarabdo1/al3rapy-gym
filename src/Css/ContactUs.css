@@ -1,0 +1,52 @@
+.FormValidate {
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.FormValidate .flex {
+  display: flex;
+}
+.FormValidate .form {
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.1058823529);
+  box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.437);
+  padding: 20px;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+.FormValidate .form .mainStackInForm .card input {
+  display: none;
+}
+.FormValidate .form .mainStackInForm .card label {
+  display: flex;
+}
+.FormValidate .form .mainStackInForm .loader {
+  display: flex;
+  justify-content: center;
+}
+.FormValidate .form .mainStackInForm .habits .CheckedIcon {
+  transition: all 0.5s ease;
+}
+.FormValidate .form .mainStackInForm .habits .CheckedIcon:hover {
+  transition: all 0.5s ease;
+  border: 1px solid;
+  transform: rotate(360deg);
+}
+.FormValidate .success {
+  display: flex;
+  color: green;
+}
+
+.text h6 {
+  color: #5d5d5d;
+  color: #a7a7a7;
+  margin-bottom: 20px;
+  font-family: "Cairo", sans-serif;
+}
+.text h3 {
+  color: white;
+}
+.text h5 {
+  color: #6F7884;
+  font-family: "Cairo", sans-serif;
+}/*# sourceMappingURL=ContactUs.css.map */

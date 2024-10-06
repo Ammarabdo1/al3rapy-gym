@@ -1,0 +1,35 @@
+.All {
+  padding: 100px 0 150px 0;
+  text-align: center;
+  height: 100vh;
+}
+.All h6 {
+  color: #6f7884;
+  margin-bottom: 20px;
+  font-family: "Cairo", sans-serif;
+}
+.All h2 {
+  font-family: "Cairo", sans-serif;
+  margin-bottom: 40px;
+}
+.All .swiper {
+  width: 400px;
+}
+.All .swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.All .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.All .swiper .swiper-slide img:hover {
+  transform: scale(1.2);
+}/*# sourceMappingURL=Whos.css.map */

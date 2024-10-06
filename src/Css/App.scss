@@ -1,0 +1,180 @@
+@import "./Colors";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Cairo", sans-serif;
+}
+
+.navbar-scroll {
+  background-color: $bg-color2;
+  backdrop-filter: blur(4px);
+  box-shadow: 0px 0px 18px 5px rgba(173, 173, 173, 0.659);
+  height: 120px;
+}
+
+.navbar-scroll-white-mode {
+  background-color: $bg-color3;
+  backdrop-filter: blur(4px);
+  box-shadow: 0px 0px 18px 7px rgba(0, 0, 0, 0.871);
+  height: 120px;
+}
+
+.navbar {
+  padding: 20px 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  //   margin: 20px 20px;
+  ol {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+    li {
+      .link1 {
+        background-image: linear-gradient(
+          to right,
+          #d48b50,
+          #d48b50 50%,
+          #000 50%
+        );
+        background-size: 200% 100%;
+        background-position: 0;
+        display: inline-block;
+        padding: 5px 0;
+        position: relative;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+        &:before {
+          content: "";
+          background: #d48b50;
+          display: block;
+          position: absolute;
+          bottom: -3px;
+          left: 0;
+          width: 100%;
+          height: 3px;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+      .link {
+        background-image: linear-gradient(
+          to right,
+          #d48b50,
+          #d48b50 50%,
+          white 50%
+        );
+        background-size: 200% 100%;
+        background-position: -100%;
+        display: inline-block;
+        padding: 5px 0;
+        position: relative;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+        &:before {
+          content: "";
+          background: #d48b50;
+          display: block;
+          position: absolute;
+          bottom: -3px;
+          left: 0;
+          width: 0;
+          height: 3px;
+          transition: all 0.3s ease-in-out;
+        }
+
+        &:hover {
+          background-position: 0;
+        }
+
+        &:hover::before {
+          width: 100%;
+        }
+
+        &:focus {
+          background-position: 0;
+        }
+
+        &:focus::before {
+          width: 100%;
+        }
+      }
+    }
+
+    img {
+      width: 100px;
+    }
+    .btn-hover {
+      width: 150px;
+      font-size: 10px;
+      font-weight: 600;
+      color: #fff;
+      cursor: pointer;
+      height: 44px;
+      text-align: center;
+      border: none;
+      background-size: 300% 100%;
+
+      border-radius: 50px;
+      moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      -webkit-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+      background-image: linear-gradient(
+        to right,
+        #ca8145,
+        #e69350,
+        #e6be50,
+        #e5dd4b,
+        #e18f4c,
+        #ffa75f,
+        #ffa75f
+      );
+      box-shadow: 0 3px 7px 2px #d48b50;
+      &:hover {
+        background-position: 100% 0;
+        moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        -webkit-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .btn-hover.color-1 {
+    }
+  }
+}
+
+.loader {
+  height: 100vh;
+  width: 100%;
+  background: url("../images/BgLoader.jpg"), url("../images/BgLoader2.jpg"),
+    url("../images/BgLoader3.jpg"), url("../images/BgLoader4.jpg") black;
+  background-size: 30%, 30%, 30%, 30%, 100%;
+  background-position: 10% bottom, 10% top, 90% bottom, 90% top;
+  background-repeat: no-repeat;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    height: 40%;
+    width: 20%;
+    backdrop-filter: blur(10px);
+    color: #c0c0c084;
+    box-shadow: 0 0 20px 15px #969696c2;
+    border-radius: 50%;
+  }
+}

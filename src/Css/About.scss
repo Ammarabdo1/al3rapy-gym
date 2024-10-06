@@ -1,0 +1,40 @@
+@use './Colors' as *;
+.About{
+    background-color: $bg-color;
+    min-height: 70vh;
+    padding: 80px 0;
+        .Text{
+            padding-left: 100px;
+            h2{
+                color: white;
+                margin-bottom: 20px;
+                font-family: "Cairo", sans-serif;
+            }
+            h6{
+                color: #3786da;
+                color: gray;
+                margin-bottom: 15px;
+            }
+        }
+        .Img{
+            overflow: hidden;
+            width: 450px;
+            height: 350px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            img{
+                width: 450px;
+                height: 350px;
+                transition: all .3s ease
+            }
+        }
+        &:hover{
+            img{
+                transform: scale(1.2);
+                border-radius: 20px;
+            }
+        }
+}
